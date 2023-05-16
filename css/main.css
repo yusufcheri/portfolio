@@ -5,6 +5,10 @@
   overflow: hidden;
 }
 
+.bold {
+  font-weight: 400;
+}
+
 .btn-main,
 .btn-light,
 .btn-dark {
@@ -479,9 +483,13 @@ img {
   text-align: center;
 }
 
+#contact-c {
+  height: 48.5vh;
+}
+
 #contact-c h1 {
   /* text-align: center; */
-  padding-top: 5rem;
+  padding-top: 6rem;
   align-items: center;
   display: flex;
   justify-content: center;
