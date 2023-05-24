@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css?family=Dosis"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <title>Contact Me | UI/UX Designer & Photographer</title>
   </head>
   <body>
@@ -22,34 +22,24 @@
     <header id="header-inner">
       <div class="container">
         <nav id="main-nav">
-          <img src="static/img/logo.png" alt="My Portfolio" id="logo" />
+          <img src="img/logo.png" alt="My Portfolio" id="logo" />
           <ul>
-            <li><a href="{{url_for('home')}}">Home</a></li>
-            <li><a href="{{url_for('about')}}" ">About</a></li>
-            <li><a href="{{url_for('work')}}">Work</a></li>
-            <li><a href="#" class="current">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html" class="current">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <!-- Section A: Contact Form -->
-    <section id="contact-a" class="text-center py-3">
-      {% if msg_sent: %}
-      <h1 class="section-title">Successfully sent your message</h1>
-      <br>
-      <p class="lead">Back to <a href="{{url_for('home')}}">home</a></p>
-      {% else: %}                  
+    <!-- <section id="contact-a" class="text-center py-3">
       <div class="container">
         <h2 class="section-title">Contact Me</h2>
         <div class="bottom-line"></div>
         <p class="lead">Here is how you can reach me</p>
-        <form
-          action="{{ url_for('contact') }}"
-          method="POST"
-          data-netlify="true"
-          data-netlify-recaptcha="true"
-        >
+        <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
           <div class="text-fields">
             <input
               type="text"
@@ -84,11 +74,10 @@
               <div data-netlify-recaptcha="true"></div>
             </div>
           </div>
-          <button type="submit" id="submitButton" class="btn-dark">Submit</button>
+          <button type="submit" class="btn-dark">Submit</button>
         </form>
       </div>
-       {% endif %}
-    </section>
+    </section> -->
 
     <!-- Section B: Contact Info -->
     <section id="contact-b" class="py-3 bg-dark">
@@ -110,7 +99,7 @@
 
     <!-- Section C: Tagline -->
     <section id="contact-c" class="bg-main py-4">
-      <div class="container">
+      <div style="height: 38.5vh" id="cntct" class="container">
         <h1>Let's Start Your Next Project</h1>
       </div>
     </section>
