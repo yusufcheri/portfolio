@@ -449,7 +449,7 @@ img {
 
 #contact-a .text-fields {
   display: grid;
-  grid-template-areas: "name email" "subject phone";
+  grid-template-areas: "name email" "subject phone" "message message";
   grid-gap: 1.2rem;
   margin-bottom: 1.2rem;
 }
@@ -479,20 +479,12 @@ img {
 
 #contact-b .contact-info {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   text-align: center;
 }
 
-#contact-c {
-  height: 48.5vh;
-}
-
 #contact-c h1 {
-  /* text-align: center; */
-  padding-top: 6rem;
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  text-align: center;
   font-size: 4rem;
 }
 
